@@ -19,6 +19,9 @@ class JwtMiddleware extends BaseMiddleware
      */
     public function handle($request, Closure $next)
     {
+        if ($request->has('graphql')){
+            return $next($request);
+        }
         try {
             $user = JWTAuth::parseToken()->authenticate();
         } catch (Exception $e) {
