@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/jwtTest.iml" filepath="$PROJECT_DIR$/.idea/jwtTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/jwtTestScrap.iml" filepath="$PROJECT_DIR$/.idea/jwtTestScrap.iml" />
     </modules>
   </component>
 </project>

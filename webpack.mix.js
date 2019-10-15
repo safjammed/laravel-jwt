@@ -1,13 +1,5 @@
 const mix = require('laravel-mix');
-require('laravel-mix-alias');
-require('laravel-mix-bundle-analyzer');
 
-mix.alias({
-    '@app': '/resources/js/src',
-    '@components' : '/resources/js/src/components',
-    '@c' : '/resources/js/src/components',
-    '@parts' : '/resources/js/src/parts',
-});
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -19,9 +11,5 @@ mix.alias({
  |
  */
 
-mix.react('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css').extract().version();
-// mix.browserSync('127.0.0.1:8000');
-if (!mix.inProduction()) {
-    mix.bundleAnalyzer();
-}
+mix.js('resources/js/app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css');
